@@ -11,6 +11,7 @@ from datetime import datetime
 import requests
 from bs4 import BeautifulSoup
 from requests.exceptions import RequestException
+from selenium.webdriver.chrome.webdriver import WebDriver
 from selenium.webdriver.common.by import By
 
 from src.spp.types import SPP_document
