@@ -154,6 +154,7 @@ class THEPAYPERS:
             try:
                 next_pg_btn = self.driver.find_element(By.XPATH, '//a[@class = \'next\']')
                 self.driver.execute_script('arguments[0].click()', next_pg_btn)
+                time.sleep(3)
                 self.wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, '.index_group')))
             except:
                 self.logger.debug('No NEXT button')
